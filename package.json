@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/YeThor/what-is-your-otter/issues"
   },
-  "homepage": "https://github.com/YeThor/what-is-your-otter#readme"
+  "homepage": "https://github.com/YeThor/what-is-your-otter#readme",
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
 }
