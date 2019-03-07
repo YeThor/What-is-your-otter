@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import IntroPage from "./components/IntroPage.jsx";
 import "./App.css";
 
-const App = () => {
-  return (
-    <div>
-      <p> React Here !</p>
-    </div>
-  );
-};
+class App extends React.Component {
+  render() {
+    return <IntroPage />;
+  }
+}
 
 export default App;
 
