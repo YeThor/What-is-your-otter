@@ -1,11 +1,51 @@
-.image-container {
-  margin-top: 10px;
+/*
+ return (
+      <div className="container">
+        <h1>일 안하고 뭐하냐?</h1>
+        <div className="image-box">
+          <img src={introImage} />
+        </div>
+        <div className="button-box">
+          <Link to="/quiz">퀴즈 풀기</Link>
+        </div>
+      </div>
+*/
+
+p {
+  font-size: 1.6vw;
+  color: black;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-box {
+  width: 50%;
 }
 
 img {
   width: 100%;
 }
 
-header {
-  text-align: center;
+.btn-quiz {
+  color: white;
+  font-size: 1.2vw;
+  background-color: #258af5;
+  text-decoration-line: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.btn-quiz:hover {
+  background-color: #256cf4;
+}
+
+.btn-quiz:active {
+  background-color: #2545f4;
 }

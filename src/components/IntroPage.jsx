@@ -6,13 +6,15 @@ import "./IntroPage.css";
 class IntroPage extends React.Component {
   render() {
     return (
-      <div>
-        <header>당신의 수달은 무엇입니까?</header>
-        <div className="image-container">
+      <div className="container">
+        <p> 이건 무슨 수달일까요?</p>
+        <div className="image-box">
           <img src={introImage} />
         </div>
-        <div>
-          <Link to="/quiz">퀴즈 풀기</Link>
+        <div className="button-box">
+          <Link to="/quiz" className="btn-quiz">
+            나의 수달 찾으러 가기
+          </Link>
         </div>
       </div>
     );
