@@ -1,6 +1,7 @@
 {
   "name": "what-is-your-otter",
   "version": "1.0.0",
+  "author": 'test',
   "description": "Find your own otter for fun",
   "main": "index.js",
   "scripts": {
