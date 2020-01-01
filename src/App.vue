@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <IntroPage msg="Welcome to Your Vue.js App"/>
+    <IntroPage msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
