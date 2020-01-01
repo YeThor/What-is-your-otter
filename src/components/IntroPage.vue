@@ -2,7 +2,7 @@
   <div class="content">
     {{ msg }}
     <h1>나에게 가장 어울리는 수달은?</h1>
-    <button v-on:click="onclick">시작하기</button>
+    <router-link to="/quiz">quiz</router-link>
   </div>
 </template>
 
@@ -11,11 +11,6 @@ export default {
   name: "IntroPage",
   props: {
     msg: String
-  },
-  methods: {
-    onclick: function() {
-      let a = 1;
-    }
   }
 };
 </script>

@@ -1,17 +1,12 @@
 <template>
   <div id="app">
-    <IntroPage msg="Welcome to Your Vue.js App" />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import IntroPage from "./components/IntroPage.vue";
-
 export default {
-  name: "app",
-  components: {
-    IntroPage
-  }
+  name: "app"
 };
 </script>
 
