@@ -1,14 +1,21 @@
 <template>
-  <div class="hello">
-    {{msg}}
+  <div class="content">
+    {{ msg }}
+    <h1>나에게 가장 어울리는 수달은?</h1>
+    <button v-on:click="onclick">시작하기</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "IntroPage",
   props: {
     msg: String
+  },
+  methods: {
+    onclick: function() {
+      let a = 1;
+    }
   }
 };
 </script>
