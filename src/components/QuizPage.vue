@@ -5,10 +5,10 @@
       <p>{{ quiz }}</p>
     </div>
     <div class="anwser-box">
-      <button v-on:click="onClick('1')">
+      <button v-on:click="onClick(1)">
         {{ answer[0].msg }}
       </button>
-      <button v-on:click="onClick('2')">
+      <button v-on:click="onClick(2)">
         {{ answer[1].msg }}
       </button>
     </div>
@@ -36,13 +36,14 @@ export default {
   },
   methods: {
     onClick: function(idx) {
-      const next = this.id + idx;
+      const next = `${this.id}${idx}`;
 
       if (!quiz[next]) {
-        console.log("결과 페이지로 이동");
-        // @TODO: 결과 페이지 이동
+        const sudal = quiz[this.id].answer[idx - 1].result;
+
+        this.$router.push({ name: "result", params: { sudal } });
       } else {
-        this.id = this.id + idx;
+        this.id = next;
       }
     }
   }
