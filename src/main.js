@@ -10,7 +10,7 @@ Vue.use(VueRouter);
 
 const routes = [
   { path: "/", component: IntroPage },
-  { path: "/quiz", component: QuizPage },
+  { name: "quiz", path: "/quiz", component: QuizPage, props: true },
   { path: "/result", component: ResultPage }
 ];
 
