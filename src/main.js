@@ -11,7 +11,7 @@ Vue.use(VueRouter);
 const routes = [
   { path: "/", component: IntroPage },
   { name: "quiz", path: "/quiz", component: QuizPage, props: true },
-  { path: "/result", component: ResultPage }
+  { name: "result", path: "/result", component: ResultPage, props: true }
 ];
 
 const router = new VueRouter({ routes, mode: "history" });
