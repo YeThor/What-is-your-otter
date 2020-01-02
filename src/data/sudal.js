@@ -73,7 +73,7 @@ const SUDAL = {
   },
   MANCHI: {
     keyword: [],
-    description: "",
+    description: "만취 수달",
     creator: {
       name: "",
       note: ""
