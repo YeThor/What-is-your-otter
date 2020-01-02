@@ -14,7 +14,7 @@ const routes = [
   { path: "/result", component: ResultPage }
 ];
 
-const router = new VueRouter({ routes });
+const router = new VueRouter({ routes, mode: "history" });
 
 new Vue({
   router,
