@@ -10,11 +10,11 @@ Vue.use(VueRouter);
 
 const routes = [
   { path: "/", component: IntroPage },
-  { path: "/quiz", component: QuizPage },
-  { path: "/result", component: ResultPage }
+  { name: "quiz", path: "/quiz", component: QuizPage, props: true },
+  { name: "result", path: "/result", component: ResultPage, props: true }
 ];
 
-const router = new VueRouter({ routes });
+const router = new VueRouter({ routes, mode: "history" });
 
 new Vue({
   router,
