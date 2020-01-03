@@ -3,7 +3,7 @@
     {{ msg }}
     <h1>나에게 가장 어울리는 수달은?</h1>
     <router-link :to="{ name: 'quiz', params: { initialID: 1 } }">
-      quiz
+      시작하기
     </router-link>
   </div>
 </template>
