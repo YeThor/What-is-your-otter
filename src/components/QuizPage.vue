@@ -1,16 +1,19 @@
 <template>
   <div>
-    <h1>Quiz Page</h1>
     <div class="quiz-box">
       <p>{{ quiz }}</p>
     </div>
     <div class="anwser-box">
-      <button v-on:click="onClick(1)">
-        {{ answer[0].msg }}
-      </button>
-      <button v-on:click="onClick(2)">
-        {{ answer[1].msg }}
-      </button>
+      <div>
+        <button v-on:click="onClick(1)">
+          {{ answer[0].msg }}
+        </button>
+      </div>
+      <div>
+        <button v-on:click="onClick(2)">
+          {{ answer[1].msg }}
+        </button>
+      </div>
     </div>
   </div>
 </template>
