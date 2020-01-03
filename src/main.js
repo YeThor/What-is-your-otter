@@ -4,6 +4,7 @@ import App from "./App.vue";
 import IntroPage from "./components/IntroPage.vue";
 import QuizPage from "./components/QuizPage.vue";
 import ResultPage from "./components/ResultPage.vue";
+import vuetify from "./plugins/vuetify";
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
@@ -18,5 +19,6 @@ const router = new VueRouter({ routes, mode: "history" });
 
 new Vue({
   router,
+  vuetify,
   render: h => h(App)
 }).$mount("#app");
