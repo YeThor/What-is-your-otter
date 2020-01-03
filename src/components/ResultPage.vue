@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>당신은 {{ this.sudal.name }} 입니다!</h1>
-    <img :src="url" />
+    <img :src="this.sudal.url" />
     <p>{{ this.sudal.description }}</p>
     <div class="creator">
       <p>창작자: {{ this.sudal.creator.name }}</p>
@@ -14,12 +14,7 @@
 <script>
 export default {
   name: "ResultPage",
-  props: ["sudal"],
-  computed: {
-    url: function() {
-      return `../assets/${this.sudal.url}`;
-    }
-  }
+  props: ["sudal"]
 };
 </script>
 
