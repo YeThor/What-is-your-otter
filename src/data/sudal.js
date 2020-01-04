@@ -20,7 +20,7 @@ const SUDAL = {
     }
   },
   MIGAK: {
-    url: "sudal-migak.png",
+    url: "sudal-masit.png",
     name: "미각수달",
     description:
       "짜증나도 일단 혀만 달래면 금세 괜찮아지는 당신! 그런 당신의 영혼의 단짝인 미각수달이에요. 아무거나 먹지 않는 까다로운 스타일이지만 먹는 것 자체를 너무 좋아해요.",
@@ -220,7 +220,7 @@ const SUDAL = {
     }
   },
   HAE: {
-    url: "sudal-hae.jpg",
+    url: "sudal-hae.png",
     name: "해ㅡ달",
     description:
       "차가운 도시에서 살고 있지만 마음만은 푸르른 대자연에 있는 당신. 아름다운 자연을 보며 깨달음을 얻는 당신에게는 수달들의 태양신, 해ㅡ달이 어울립니다.",
