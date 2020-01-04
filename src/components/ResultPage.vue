@@ -27,6 +27,12 @@
             </v-expansion-panels>
           </v-card>
         </v-row>
+        <v-row justify="center" class="mt-2">
+          <v-btn outlined color="teal" @click="initIntro">
+            <v-icon left>mdi-repeat</v-icon>
+            다시하기
+          </v-btn>
+        </v-row>
       </v-col>
     </v-row>
   </v-container>
@@ -37,9 +43,8 @@ export default {
   name: "ResultPage",
   props: ["sudal"],
   methods: {
-    showNote: function() {
-      // @TODO: 창작자 노트는 어떻게?
-      alert("hi");
+    initIntro: function() {
+      this.$router.push({ path: "/" });
     }
   }
 };
