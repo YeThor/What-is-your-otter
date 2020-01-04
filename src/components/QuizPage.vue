@@ -1,21 +1,25 @@
 <template>
-  <div>
-    <div class="quiz-box">
-      <p>{{ quiz }}</p>
-    </div>
-    <div class="anwser-box">
-      <div>
-        <button v-on:click="onClick(1)">
-          {{ answer[0].msg }}
-        </button>
-      </div>
-      <div>
-        <button v-on:click="onClick(2)">
-          {{ answer[1].msg }}
-        </button>
-      </div>
-    </div>
-  </div>
+  <v-container fluid>
+    <v-row justify="center">
+      <v-col cols="10">
+        <v-row class="mb-2" justify="center">
+          <p class="text-center title font-weight-bold">
+            {{ quiz }}
+          </p>
+        </v-row>
+        <v-row class="mb-2" justify="center">
+          <v-btn @click="onClick(1)" outlined color="teal">
+            {{ answer[0].msg }}
+          </v-btn>
+        </v-row>
+        <v-row justify="center">
+          <v-btn @click="onClick(2)" outlined color="teal">
+            {{ answer[1].msg }}
+          </v-btn>
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
