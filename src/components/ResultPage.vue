@@ -28,9 +28,19 @@
           </v-card>
         </v-row>
         <v-row justify="center" class="mt-2">
-          <v-btn outlined color="teal" @click="initIntro">
+          <v-btn outlined color="teal" @click="initIntro" class="mr-2">
             <v-icon left>mdi-repeat</v-icon>
             다시하기
+          </v-btn>
+          <v-btn
+            outlined
+            color="teal"
+            v-clipboard:copy="url"
+            v-clipboard:success="copyURL"
+            v-clipboard:error="onError"
+          >
+            <v-icon left>mdi-content-copy</v-icon>
+            url 공유하기
           </v-btn>
         </v-row>
       </v-col>
@@ -42,9 +52,20 @@
 export default {
   name: "ResultPage",
   props: ["sudal"],
+  data: function() {
+    return {
+      url: "https://yethor.github.io/what-is-your-otter"
+    };
+  },
   methods: {
     initIntro: function() {
       this.$router.push({ path: "/" });
+    },
+    copyURL: function() {
+      alert("url이 복사되었습니다.");
+    },
+    onError: function() {
+      alert("오류로 인해 url이 복사되지 못했습니다...");
     }
   }
 };
