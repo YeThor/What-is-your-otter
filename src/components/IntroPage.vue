@@ -1,19 +1,28 @@
 <template>
   <v-container fluid>
-    <v-row>
-      <v-col cols="12">
+    <v-row justify="center">
+      <v-col cols="10">
         <v-row justify="center">
-          <p class="text-center display-1">
-            나에게 가장 어울리는 수달은?
+          <p class="text-center headline">
+            당신의 수달은?
           </p>
+        </v-row>
+        <v-row justify="center">
+          <v-col cols="8">
+            <v-row justify="center">
+              <v-img
+                src="sudal.jpg"
+                lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAP7//wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                max-width="30%"
+                min-width="350"
+              ></v-img>
+            </v-row>
+          </v-col>
         </v-row>
         <v-row class="mb-3 mt-2" justify="center">
           <v-btn @click="initQuiz" outlined color="teal">
             시작하기
           </v-btn>
-        </v-row>
-        <v-row justify="center">
-          <v-img src="sudal.jpg" max-width="30%" min-width="250"></v-img>
         </v-row>
       </v-col>
     </v-row>
