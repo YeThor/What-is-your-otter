@@ -5,7 +5,7 @@
         <v-row justify="center">
           <v-img
             :src="this.sudal.url"
-            lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2M4c+bMfwAIMANkq3cY2wAAAABJRU5ErkJggg=="
+            lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAP7//wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
             max-width="30%"
             min-width="350"
           />
