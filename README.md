@@ -1,24 +1,12 @@
-# what-is-your-otter
+# 당신의 수달은?
 
-## Project setup
-```
-npm install
-```
+당신만의 수달을 찾아 떠나는 여행
+https://yethor.github.io/what-is-your-otter/index.html
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Tech
+- Vue
+- Vue-cli
+- Vuetify
+- Github Pages
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
