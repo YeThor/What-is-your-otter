@@ -3,10 +3,15 @@
     <v-row justify="center">
       <v-col cols="10">
         <v-row justify="center">
-          <v-img :src="this.sudal.url" max-width="500" min-width="250" />
+          <v-img
+            :src="this.sudal.url"
+            lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2M4c+bMfwAIMANkq3cY2wAAAABJRU5ErkJggg=="
+            max-width="30%"
+            min-width="350"
+          />
         </v-row>
 
-        <v-row justify="center">
+        <v-row justify="center" class="mt-2">
           <v-card shaped max-width="500">
             <v-card-title class="headline"
               >당신은 {{ this.sudal.name }}이군요!</v-card-title
@@ -54,7 +59,7 @@ export default {
   props: ["sudal"],
   data: function() {
     return {
-      url: "https://yethor.github.io/what-is-your-otter"
+      url: "https://yethor.github.io/what-is-your-otter/index.html"
     };
   },
   methods: {
