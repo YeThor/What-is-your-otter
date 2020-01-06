@@ -1,5 +1,6 @@
 import SUDAL from "./sudal";
 
+// @link 기획안 https://github.com/YeThor/what-is-your-otter/issues/2
 const quizResult = {
   "1": {
     quiz: "나는 요즘 ...",
