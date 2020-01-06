@@ -1,3 +1,4 @@
+// @link 수달 아이디어 이슈 https://github.com/YeThor/what-is-your-otter/issues/11
 const SUDAL = {
   SPA: {
     url: "sudal-spa.png",
