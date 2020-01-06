@@ -22,6 +22,7 @@ https://yethor.github.io/what-is-your-otter/index.html
 ## Tech
 - Vue
 - Vue-cli
+- Vue-Router
 - Vuetify
 - Github Pages
 
