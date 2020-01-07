@@ -45,7 +45,7 @@
             v-clipboard:error="onError"
           >
             <v-icon left>mdi-content-copy</v-icon>
-            url 공유하기
+            퀴즈 공유하기
           </v-btn>
         </v-row>
       </v-col>
