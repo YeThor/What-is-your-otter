@@ -18,6 +18,7 @@ https://yethor.github.io/what-is-your-otter/index.html
   - 양현조
   - 전형배
   - 정연환
+  - 최현지
 
 ## Tech
 - Vue
